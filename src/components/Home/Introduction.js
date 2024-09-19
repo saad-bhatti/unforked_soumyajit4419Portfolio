@@ -21,25 +21,25 @@ function Introduction() {
             <br />
             <br />
             I am fluent in classics like
-            <i children={<b className='purple' children='C++, Javascript and Go.' />} />
+            <i children={<b className='purple' children=' C++, Javascript and Go.' />} />
             <br />
             <br />
             My field of Interest's are building new &nbsp;
             <i>
               <b className='purple' children='Web Technologies and Products' /> and also in areas
               related to
-              <b className='purple' children='Blockchain.' />
+              <b className='purple' children=' Blockchain.' />
             </i>
             <br />
             <br />
             Whenever possible, I also apply my passion for developing products with
-            <b className='purple' children='Node.js' /> and
+            <b className='purple' children=' Node.js' /> and
             <i>
-              <b className='purple' children='Modern Javascript Library and Frameworks' />
+              <b className='purple' children=' Modern Javascript Library and Frameworks' />
             </i>
             &nbsp; like
             <i>
-              <b className='purple'> React.js and Next.js</b>
+              <b className='purple' children=' React.js and Next.js' />
             </i>
           </p>
         </Col>
