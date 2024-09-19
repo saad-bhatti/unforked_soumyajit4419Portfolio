@@ -1,10 +1,9 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import laptopImg from '../assets/about.png'
-import Aboutcard from '../components/About/AboutCard.js'
-import Github from '../components/About/Github.js'
-import Techstack from '../components/About/Techstack.js'
-import Toolstack from '../components/About/Toolstack.js'
+import { Container } from 'react-bootstrap'
+import AboutMe from '../components/About/AboutMe.js'
+import GithubContributions from '../components/About/GithubContributions.js'
+import TechStack from '../components/About/TechStack.js'
+import ToolStack from '../components/About/ToolStack.js'
 import Particle from '../components/Particle.js'
 import '../styles/About.css'
 
@@ -12,37 +11,12 @@ function About() {
   return (
     <Container fluid className='about-section'>
       <Particle />
+      
       <Container>
-        <Row style={{ justifyContent: 'center', padding: '10px' }}>
-          <Col
-            md={7}
-            style={{
-              justifyContent: 'center',
-              paddingTop: '30px',
-              paddingBottom: '50px'
-            }}
-          >
-            <h1 style={{ fontSize: '2.1em', paddingBottom: '20px' }}>
-              Know Who <strong className='purple'>I'M</strong>
-            </h1>
-            <Aboutcard />
-          </Col>
-          <Col md={5} style={{ paddingTop: '120px', paddingBottom: '50px' }} className='about-img'>
-            <img src={laptopImg} alt='about' className='img-fluid' />
-          </Col>
-        </Row>
-        <h1 className='project-heading'>
-          Professional <strong className='purple'>Skillset </strong>
-        </h1>
-
-        <Techstack />
-
-        <h1 className='project-heading'>
-          <strong className='purple'>Tools</strong> I use
-        </h1>
-        <Toolstack />
-
-        <Github />
+        <AboutMe />
+        <TechStack />
+        <ToolStack />
+        <GithubContributions />
       </Container>
     </Container>
   )
