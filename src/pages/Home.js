@@ -8,11 +8,11 @@ import '../styles/Home.css'
 function Home() {
   return (
     <section>
-      <Container fluid className='home-section' id='home'>
+      <Container fluid className="home-section" id="home">
         <Particle />
 
         {/* Greeting component */}
-        <Container className='home-content'>
+        <Container className="home-content">
           <Greeting />
         </Container>
 

@@ -10,7 +10,13 @@ import {
   DiPython,
   DiReact
 } from 'react-icons/di'
-import { SiFirebase, SiNextdotjs, SiPostgresql, SiRedis, SiSolidity } from 'react-icons/si'
+import {
+  SiFirebase,
+  SiNextdotjs,
+  SiPostgresql,
+  SiRedis,
+  SiSolidity
+} from 'react-icons/si'
 import { TbBrandGolang } from 'react-icons/tb'
 
 function TechStack() {
@@ -75,17 +81,17 @@ function TechStack() {
   ]
 
   return (
-    <Row className='stack-row' style={{ justifyContent: 'center', paddingBottom: '50px' }}>
+    <Row className="stack-row">
       {/* Title */}
-      <h1 className='project-heading'>
-        Professional <strong className='purple' children='Skillset' />
+      <h1 className="project-heading">
+        Professional <strong className="purple" children="Skillset" />
       </h1>
 
       {/* Tech stack */}
       {techs.map((tech, index) => (
-        <Col xs={4} md={2} className='tech-icons' key={index}>
+        <Col xs={4} md={2} className="tech-icons" key={index}>
           {tech.icon}
-          <div className='stack-text purple' children={tech.text} />
+          <div className="stack-text purple" children={tech.text} />
         </Col>
       ))}
     </Row>

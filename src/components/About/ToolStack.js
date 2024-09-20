@@ -1,6 +1,12 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { SiMacos, SiPostman, SiSlack, SiVercel, SiVisualstudiocode } from 'react-icons/si'
+import {
+  SiMacos,
+  SiPostman,
+  SiSlack,
+  SiVercel,
+  SiVisualstudiocode
+} from 'react-icons/si'
 
 function ToolStack() {
   /* Array of the tool stack */
@@ -28,17 +34,17 @@ function ToolStack() {
   ]
 
   return (
-    <Row className='stack-row' style={{ justifyContent: 'center', paddingBottom: '50px' }}>
+    <Row className="stack-row">
       {/* Title */}
-      <h1 className='project-heading'>
-        <strong className='purple' children='Tools' /> I use
+      <h1 className="project-heading">
+        <strong className="purple" children="Tools" /> I use
       </h1>
 
       {/* Tool stack */}
       {tools.map((tool, index) => (
-        <Col xs={4} md={2} className='tech-icons' key={index}>
+        <Col xs={4} md={2} className="tech-icons" key={index}>
           {tool.icon}
-          <div className='stack-text purple' children={tool.text} />
+          <div className="stack-text purple" children={tool.text} />
         </Col>
       ))}
     </Row>

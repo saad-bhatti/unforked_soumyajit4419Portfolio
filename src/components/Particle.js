@@ -5,7 +5,7 @@ import '../styles/Particle.css'
 function Particle() {
   return (
     <Particles
-      id='tsparticles'
+      id="tsparticles"
       params={{
         particles: {
           number: {

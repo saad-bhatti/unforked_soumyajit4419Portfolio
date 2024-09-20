@@ -28,49 +28,54 @@ function NavBar() {
       isExternalLink: false,
       text: 'Home',
       to: '/',
-      icon: <AiOutlineHome className='navbar-icon' />
+      icon: <AiOutlineHome className="navbar-icon" />
     },
     {
       isExternalLink: false,
       text: 'About',
       to: '/about',
-      icon: <AiOutlineUser className='navbar-icon' />
+      icon: <AiOutlineUser className="navbar-icon" />
     },
     {
       isExternalLink: false,
       text: 'Projects',
       to: '/project',
-      icon: <AiOutlineFundProjectionScreen className='navbar-icon' />
+      icon: <AiOutlineFundProjectionScreen className="navbar-icon" />
     },
     {
       isExternalLink: false,
       text: 'Resume',
       to: '/resume',
-      icon: <CgFileDocument className='navbar-icon' />
+      icon: <CgFileDocument className="navbar-icon" />
     },
     {
       isExternalLink: true,
       text: 'Blogs',
       to: 'https://soumyajitblogs.vercel.app/',
-      icon: <ImBlog className='navbar-icon' />,
+      icon: <ImBlog className="navbar-icon" />,
       external: true
     }
   ]
 
   return (
-    <Navbar expanded={expand} fixed='top' expand='md' className={navColour ? 'sticky' : 'navbar'}>
+    <Navbar
+      expanded={expand}
+      fixed="top"
+      expand="md"
+      className={navColour ? 'sticky' : 'navbar'}
+    >
       <Container>
         {/* Home icon */}
         <Navbar.Brand
           as={Link}
-          to='/'
-          className='d-flex'
-          children={<img src={logo} className='img-fluid logo' alt='brand' />}
+          to="/"
+          className="d-flex"
+          children={<img src={logo} className="img-fluid logo" alt="brand" />}
         />
 
         {/* Toggle for mobile view */}
         <Navbar.Toggle
-          aria-controls='responsive-navbar-nav'
+          aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(!expand)
           }}
@@ -80,8 +85,8 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
 
-        <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='ms-auto' defaultActiveKey='#home'>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto" defaultActiveKey="#home">
             {/* Navbar items */}
             {items.map((item, index) => (
               <Nav.Item key={index}>
@@ -98,11 +103,11 @@ function NavBar() {
             ))}
 
             {/* Fork button */}
-            <Nav.Item className='fork-btn'>
+            <Nav.Item className="fork-btn">
               <Button
-                href='https://github.com/soumyajit4419/Portfolio'
-                target='_blank'
-                className='fork-btn-inner'
+                href="https://github.com/soumyajit4419/Portfolio"
+                target="_blank"
+                className="fork-btn-inner"
               >
                 <CgGitFork style={{ fontSize: '1.2em' }} />{' '}
                 <AiFillStar style={{ fontSize: '1.1em' }} />

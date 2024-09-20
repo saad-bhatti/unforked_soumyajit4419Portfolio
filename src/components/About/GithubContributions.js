@@ -6,16 +6,16 @@ function GithubContributions() {
   return (
     <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
       {/* Title */}
-      <h1 className='project-heading' style={{ paddingBottom: '20px' }}>
-        Days I <strong className='purple' children='Code' />
+      <h1 className="project-heading" style={{ paddingBottom: '20px' }}>
+        Days I <strong className="purple" children="Code" />
       </h1>
 
       {/* Github Calendar */}
       <GitHubCalendar
-        username='soumyajit4419'
+        username="soumyajit4419"
         blockSize={15}
         blockMargin={5}
-        color='#c084f5'
+        color="#c084f5"
         fontSize={16}
       />
     </Row>
