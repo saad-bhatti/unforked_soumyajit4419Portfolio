@@ -5,9 +5,9 @@ import { CgWebsite } from 'react-icons/cg'
 
 function ProjectCards(props) {
   return (
-    <Card className='project-card-view'>
+    <Card className="project-card-view">
       {/* Project image */}
-      <Card.Img variant='top' src={props.imgPath} alt='card-img' />
+      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
 
       {/* Project details */}
       <Card.Body>
@@ -15,11 +15,14 @@ function ProjectCards(props) {
         <Card.Title children={props.title} />
 
         {/* Project description */}
-        <Card.Text style={{ textAlign: 'justify' }} children={props.description} />
+        <Card.Text
+          style={{ textAlign: 'justify' }}
+          children={props.description}
+        />
 
         {/* GitHub button */}
         {props.ghLink && (
-          <Button variant='primary' href={props.ghLink} target='_blank'>
+          <Button variant="primary" href={props.ghLink} target="_blank">
             <BsGithub /> &nbsp; GitHub
           </Button>
         )}
@@ -27,9 +30,9 @@ function ProjectCards(props) {
         {/* Demo button */}
         {props.demoLink && (
           <Button
-            variant='primary'
+            variant="primary"
             href={props.demoLink}
-            target='_blank'
+            target="_blank"
             style={{ marginLeft: '10px' }}
           >
             <CgWebsite /> &nbsp; Demo

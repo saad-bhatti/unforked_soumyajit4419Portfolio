@@ -8,28 +8,28 @@ function Footer() {
   let year = date.getFullYear()
 
   return (
-    <Container fluid className='footer'>
+    <Container fluid className="footer">
       <Row>
         {/* Credit */}
-        <Col md='4' className='footer-copywright'>
+        <Col md="4" className="footer-copywright">
           <h3>Designed and Developed by Soumyajit Behera</h3>
         </Col>
 
         {/* Copyright */}
-        <Col md='4' className='footer-copywright'>
+        <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} SB</h3>
         </Col>
 
         {/* Social Icons */}
-        <Col md='4' className='footer-body'>
-          <ul className='footer-icons'>
+        <Col md="4" className="footer-body">
+          <ul className="footer-icons">
             {socialIcons.map((socialIcon, index) => (
-              <li className='social-icons' key={index}>
+              <li className="social-icons" key={index}>
                 <a
                   href={socialIcon.link}
                   style={{ color: 'white' }}
-                  target='_blank'
-                  rel='noopener noreferrer'
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   {socialIcon.icon}
                 </a>

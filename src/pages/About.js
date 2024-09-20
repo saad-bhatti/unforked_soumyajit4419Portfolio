@@ -9,9 +9,9 @@ import '../styles/About.css'
 
 function About() {
   return (
-    <Container fluid className='about-section'>
+    <Container fluid className="about-section">
       <Particle />
-      
+
       <Container>
         <AboutMe />
         <TechStack />

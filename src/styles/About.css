@@ -55,3 +55,20 @@
     padding-top: 0 !important;
   }
 }
+
+.stack-row {
+  justify-content: center !important;
+  padding-bottom: 50px !important;
+}
+
+.stack-text {
+  display: none;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  font-style: italic;
+  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+}
+
+.stack-row:hover .stack-text {
+  display: block;
+}

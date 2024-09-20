@@ -14,15 +14,21 @@ function Greeting() {
 
   return (
     <Row>
-      <Col md={7} className='home-header'>
+      <Col md={7} className="home-header">
         {/* Greeting */}
-        <h1 style={{ paddingBottom: 15 }} className='heading'>
-          Hi There! <span className='wave' role='img' aria-labelledby='wave' children='👋🏻' />
+        <h1 style={{ paddingBottom: 15 }} className="heading">
+          Hi There!{' '}
+          <span
+            className="wave"
+            role="img"
+            aria-labelledby="wave"
+            children="👋🏻"
+          />
         </h1>
 
         {/* Name */}
-        <h1 className='heading-name'>
-          I'M <strong className='main-name' children='SOUMYAJIT BEHERA' />
+        <h1 className="heading-name">
+          I'M <strong className="main-name" children="SOUMYAJIT BEHERA" />
         </h1>
 
         {/* Roles */}
@@ -40,7 +46,12 @@ function Greeting() {
 
       {/* Home Logo */}
       <Col md={5} style={{ paddingBottom: 20 }}>
-        <img src={homeLogo} alt='home pic' className='img-fluid' style={{ maxHeight: '450px' }} />
+        <img
+          src={homeLogo}
+          alt="home pic"
+          className="img-fluid"
+          style={{ maxHeight: '450px' }}
+        />
       </Col>
     </Row>
   )
