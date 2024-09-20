@@ -1,32 +1,11 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { AiFillGithub, AiFillInstagram, AiOutlineTwitter } from 'react-icons/ai'
-import { FaLinkedinIn } from 'react-icons/fa'
 import '../styles/Footer.css'
+import socialIcons from './socialIcons.js'
 
 function Footer() {
   let date = new Date()
   let year = date.getFullYear()
-
-  /* Array of Social Icons */
-  const socialIcons = [
-    {
-      link: 'https://github.com/soumyajit4419',
-      icon: <AiFillGithub />
-    },
-    {
-      link: 'https://twitter.com/Soumyajit4419',
-      icon: <AiOutlineTwitter />
-    },
-    {
-      link: 'https://www.linkedin.com/in/soumyajit4419/',
-      icon: <FaLinkedinIn />
-    },
-    {
-      link: 'https://www.instagram.com/soumyajit4419',
-      icon: <AiFillInstagram />
-    }
-  ]
 
   return (
     <Container fluid className='footer'>

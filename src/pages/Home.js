@@ -1,8 +1,7 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
-import homeLogo from '../assets/home-main.svg'
-import Home2 from '../components/Home/Home2.js'
-import Type from '../components/Home/Type.js'
+import { Container } from 'react-bootstrap'
+import Greeting from '../components/Home/Greeting.js'
+import Introduction from '../components/Home/Introduction.js'
 import Particle from '../components/Particle.js'
 import '../styles/Home.css'
 
@@ -11,38 +10,15 @@ function Home() {
     <section>
       <Container fluid className='home-section' id='home'>
         <Particle />
+
+        {/* Greeting component */}
         <Container className='home-content'>
-          <Row>
-            <Col md={7} className='home-header'>
-              <h1 style={{ paddingBottom: 15 }} className='heading'>
-                Hi There!{' '}
-                <span className='wave' role='img' aria-labelledby='wave'>
-                  👋🏻
-                </span>
-              </h1>
-
-              <h1 className='heading-name'>
-                I'M
-                <strong className='main-name'> SOUMYAJIT BEHERA</strong>
-              </h1>
-
-              <div style={{ padding: 50, textAlign: 'left' }}>
-                <Type />
-              </div>
-            </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt='home pic'
-                className='img-fluid'
-                style={{ maxHeight: '450px' }}
-              />
-            </Col>
-          </Row>
+          <Greeting />
         </Container>
+
+        {/* Introduction component */}
+        <Introduction />
       </Container>
-      <Home2 />
     </section>
   )
 }
