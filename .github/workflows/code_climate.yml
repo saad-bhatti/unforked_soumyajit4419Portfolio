@@ -1,18 +1,18 @@
 name: CodeClimateTests
 on: [push, pull_request]
 jobs:
-  test:
+  run_tests:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
-      - uses: actions/checkout@v2
+      # Step 1: Checkout the repository using the latest version
+      - uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
+      # Step 2: Set up Node.js using the latest version
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v3
         with:
-          node-version: '14.x'
+          node-version: '20.x'
 
       # Step 3: Install dependencies
       - name: Install Dependencies
