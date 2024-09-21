@@ -1,6 +1,7 @@
 {
+  "homepage": "https://saad-bhatti.github.io/soumyajit4419Portfolio",
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
@@ -27,7 +28,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "prettier --config .prettierrc --write \"src/**/*.{js,jsx,json,css,html,md}\""
+    "format": "prettier --config .prettierrc --write \"src/**/*.{js,jsx,json,css,html,md}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +51,7 @@
     ]
   },
   "devDependencies": {
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "gh-pages": "^6.1.1"
   }
 }
