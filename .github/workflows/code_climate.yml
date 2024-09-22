@@ -26,7 +26,7 @@ jobs:
       - name: Run Tests and Upload Coverage
         run: |
           cc-test-reporter before-build
-          npm test
-          cc-test-reporter after-build --exit-code $?
+          npm test -- --coverage
+          cc-test-reporter after-build --exit-code $? --coverage-input-type lcov --coverage-files coverage/lcov.info
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
