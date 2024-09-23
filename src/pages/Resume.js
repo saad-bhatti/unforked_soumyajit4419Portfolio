@@ -35,7 +35,7 @@ function Resume() {
         <Particle />
 
         {/* Download button */}
-        <DownloadButton />
+        {DownloadButton}
 
         {/* Resume view */}
         <Row className="resume">
@@ -45,7 +45,7 @@ function Resume() {
         </Row>
 
         {/* Download button */}
-        <DownloadButton />
+        {DownloadButton}
       </Container>
     </div>
   )
