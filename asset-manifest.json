@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/soumyajit4419Portfolio/static/css/main.aa324b7d.css",
-    "main.js": "/soumyajit4419Portfolio/static/js/main.70bfad60.js",
+    "main.js": "/soumyajit4419Portfolio/static/js/main.9b25236b.js",
     "static/js/453.ace21015.chunk.js": "/soumyajit4419Portfolio/static/js/453.ace21015.chunk.js",
     "static/media/leaf.png": "/soumyajit4419Portfolio/static/media/leaf.ff2616f664c8c0ceab91.png",
     "static/media/emotion.png": "/soumyajit4419Portfolio/static/media/emotion.eabfc16e7a146ab15778.png",
@@ -14,14 +14,14 @@
     "static/media/Soumyajit-Behera-Resume.pdf": "/soumyajit4419Portfolio/static/media/Soumyajit-Behera-Resume.f31c00c0623443fc6fa3.pdf",
     "static/media/home-bg.jpg": "/soumyajit4419Portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/avatar.svg": "/soumyajit4419Portfolio/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg",
-    "static/media/pre.svg": "/soumyajit4419Portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/soumyajit4419Portfolio/index.html",
+    "static/media/pre.svg": "/soumyajit4419Portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "main.aa324b7d.css.map": "/soumyajit4419Portfolio/static/css/main.aa324b7d.css.map",
-    "main.70bfad60.js.map": "/soumyajit4419Portfolio/static/js/main.70bfad60.js.map",
+    "main.9b25236b.js.map": "/soumyajit4419Portfolio/static/js/main.9b25236b.js.map",
     "453.ace21015.chunk.js.map": "/soumyajit4419Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa324b7d.css",
-    "static/js/main.70bfad60.js"
+    "static/js/main.9b25236b.js"
   ]
 }
