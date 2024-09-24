@@ -8,7 +8,7 @@ import '../styles/Home.css'
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
+      <Container fluid className="home-section" id="home" data-testid="home-section">
         <Particle />
 
         {/* Greeting component */}

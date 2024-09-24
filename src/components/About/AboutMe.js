@@ -6,7 +6,10 @@ import sideActivities from '../../data/sideActivities'
 
 function AboutMe() {
   return (
-    <Row style={{ justifyContent: 'center', padding: '10px' }}>
+    <Row
+      style={{ justifyContent: 'center', padding: '10px' }}
+      data-testid="aboutme-component"
+    >
       <Col
         md={7}
         style={{

@@ -4,7 +4,7 @@ import toolStackData from '../../data/toolStackData.js'
 
 function ToolStack() {
   return (
-    <Row className="stack-row">
+    <Row className="stack-row" data-testid="toolstack-component">
       {/* Title */}
       <h1 className="project-heading" data-testid="toolstack-title">
         <strong className="purple" children="Tools" /> I use

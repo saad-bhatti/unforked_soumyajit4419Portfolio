@@ -9,7 +9,7 @@ import '../styles/About.css'
 
 function About() {
   return (
-    <Container fluid className="about-section">
+    <Container fluid className="about-section" data-testid="about-section">
       <Particle />
 
       <Container>

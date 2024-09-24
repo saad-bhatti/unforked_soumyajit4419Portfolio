@@ -6,7 +6,7 @@ import interestedRoles from '../../data/interestedRoles'
 
 function Greeting() {
   return (
-    <Row>
+    <Row data-testid="greeting-component">
       <Col md={7} className="home-header">
         {/* Greeting */}
         <h1

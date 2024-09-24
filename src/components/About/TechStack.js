@@ -4,7 +4,7 @@ import techStackData from '../../data/techStackData.js'
 
 function TechStack() {
   return (
-    <Row className="stack-row">
+    <Row className="stack-row" data-testid="techstack-component">
       {/* Title */}
       <h1 className="project-heading" data-testid="techstack-title">
         Professional <strong className="purple" children="Skillset" />
