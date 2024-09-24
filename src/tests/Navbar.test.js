@@ -15,63 +15,64 @@ function renderNavbar() {
     </MemoryRouter>
   )
 }
+describe('Navbar Component', () => {
+  test('renders the NavBar with logo', () => {
+    renderNavbar()
 
-test('renders the NavBar with logo', () => {
-  renderNavbar()
+    const logoElement = screen.getByTestId('navbar-brand')
+    expect(logoElement).toBeInTheDocument()
+  })
 
-  const logoElement = screen.getByTestId('navbar-brand')
-  expect(logoElement).toBeInTheDocument()
-})
+  test('toggles the navbar when the toggle button is clicked', async () => {
+    renderNavbar()
 
-test('toggles the navbar when the toggle button is clicked', async () => {
-  renderNavbar()
+    const toggleButton = screen.getByTestId('navbar-toggle')
+    const navbarCollapse = screen.getByTestId('navbar-collapse')
 
-  const toggleButton = screen.getByTestId('navbar-toggle')
-  const navbarCollapse = screen.getByTestId('navbar-collapse')
+    // Initially, the navbar should be collapsed
+    expect(navbarCollapse).toHaveClass('collapse')
 
-  // Initially, the navbar should be collapsed
-  expect(navbarCollapse).toHaveClass('collapse')
+    // Click the toggle button to expand the navbar
+    fireEvent.click(toggleButton)
 
-  // Click the toggle button to expand the navbar
-  fireEvent.click(toggleButton)
+    // Wait for the collapse class to be removed and show class to be added
+    await waitFor(() => expect(navbarCollapse).not.toHaveClass('collapse'))
+    await waitFor(() => expect(navbarCollapse).toHaveClass('show'))
 
-  // Wait for the collapse class to be removed and show class to be added
-  await waitFor(() => expect(navbarCollapse).not.toHaveClass('collapse'))
-  await waitFor(() => expect(navbarCollapse).toHaveClass('show'))
+    // Click the toggle button again to collapse the navbar
+    fireEvent.click(toggleButton)
 
-  // Click the toggle button again to collapse the navbar
-  fireEvent.click(toggleButton)
+    // Wait for the collapse class to be added again
+    await waitFor(() => expect(navbarCollapse).toHaveClass('collapse'))
+  })
 
-  // Wait for the collapse class to be added again
-  await waitFor(() => expect(navbarCollapse).toHaveClass('collapse'))
-})
+  test('renders all navbar items', () => {
+    renderNavbar()
 
-test('renders all navbar items', () => {
-  renderNavbar()
+    expect(screen.getByTestId('navbar-link-Home')).toBeInTheDocument()
+    expect(screen.getByTestId('navbar-link-About')).toBeInTheDocument()
+    expect(screen.getByTestId('navbar-link-Projects')).toBeInTheDocument()
+    expect(screen.getByTestId('navbar-link-Resume')).toBeInTheDocument()
+    expect(screen.getByTestId('navbar-link-Blogs')).toBeInTheDocument()
+  })
 
-  expect(screen.getByTestId('navbar-link-Home')).toBeInTheDocument()
-  expect(screen.getByTestId('navbar-link-About')).toBeInTheDocument()
-  expect(screen.getByTestId('navbar-link-Projects')).toBeInTheDocument()
-  expect(screen.getByTestId('navbar-link-Resume')).toBeInTheDocument()
-  expect(screen.getByTestId('navbar-link-Blogs')).toBeInTheDocument()
-})
+  test('scrolling changes navbar color', () => {
+    renderNavbar()
 
-test('scrolling changes navbar color', () => {
-  renderNavbar()
+    // Simulate scrolling
+    fireEvent.scroll(window, { target: { scrollY: 30 } })
 
-  // Simulate scrolling
-  fireEvent.scroll(window, { target: { scrollY: 30 } })
+    const navbar = screen.getByTestId('navbar')
+    expect(navbar).toHaveClass('sticky')
+  })
 
-  const navbar = screen.getByTestId('navbar')
-  expect(navbar).toHaveClass('sticky')
-})
+  test('fork button directs to correct GitHub URL', () => {
+    renderNavbar()
 
-test('fork button directs to correct GitHub URL', () => {
-  renderNavbar()
-
-  const forkLink = screen.getByTestId('fork-link')
-  expect(forkLink).toHaveAttribute(
-    'href',
-    'https://github.com/soumyajit4419/Portfolio'
-  )
+    const forkLink = screen.getByTestId('fork-link')
+    expect(forkLink).toHaveAttribute(
+      'href',
+      'https://github.com/soumyajit4419/Portfolio'
+    )
+  })
 })
