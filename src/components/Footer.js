@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+import socialIcons from '../data/socialIcons.js'
 import '../styles/Footer.css'
-import socialIcons from './socialIcons.js'
 
 function Footer() {
   let date = new Date()

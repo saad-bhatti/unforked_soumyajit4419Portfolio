@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Tilt from 'react-parallax-tilt'
 import myImg from '../../assets/avatar.svg'
-import socialIcons from '../socialIcons.js'
+import socialIcons from '../../data/socialIcons.js'
 
 function Introduction() {
   return (
