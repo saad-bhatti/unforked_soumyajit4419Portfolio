@@ -10,7 +10,7 @@ function ProjectCards(props) {
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
 
       {/* Project details */}
-      <Card.Body>
+      <Card.Body className="project-card-body">
         {/* Project title */}
         <Card.Title children={props.title} />
 
@@ -20,26 +20,29 @@ function ProjectCards(props) {
           children={props.description}
         />
 
-        {/* GitHub button */}
-        {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank">
-            <BsGithub /> &nbsp; GitHub
-          </Button>
-        )}
+        <div className="button-container">
+          {/* GitHub button */}
+          {props.ghLink && (
+            <Button variant="primary" href={props.ghLink} target="_blank">
+              <BsGithub /> &nbsp; GitHub
+            </Button>
+          )}
 
-        {/* Demo button */}
-        {props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: '10px' }}
-          >
-            <CgWebsite /> &nbsp; Demo
-          </Button>
-        )}
+          {/* Demo button */}
+          {props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: '10px' }}
+            >
+              <CgWebsite /> &nbsp; Demo
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   )
 }
+
 export default ProjectCards
