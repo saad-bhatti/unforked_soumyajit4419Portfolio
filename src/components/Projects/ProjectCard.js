@@ -11,18 +11,20 @@ function ProjectCard(props) {
         variant="top"
         src={props.imgPath}
         alt="card-img"
-        data-testid="project-img"
+        data-testid={`project-img-${props.index}`}
       />
 
       {/* Project details */}
       <Card.Body className="project-card-body">
         {/* Project title */}
-        <Card.Title data-testid="project-title">{props.title}</Card.Title>
+        <Card.Title data-testid={`project-title-${props.index}`}>
+          {props.title}
+        </Card.Title>
 
         {/* Project description */}
         <Card.Text
           style={{ textAlign: 'justify' }}
-          data-testid="project-description"
+          data-testid={`project-description-${props.index}`}
         >
           {props.description}
         </Card.Text>
@@ -34,7 +36,7 @@ function ProjectCard(props) {
               variant="primary"
               href={props.ghLink}
               target="_blank"
-              data-testid="github-link"
+              data-testid={`github-link-${props.index}`}
             >
               <BsGithub /> &nbsp; GitHub
             </Button>
@@ -47,7 +49,7 @@ function ProjectCard(props) {
               href={props.demoLink}
               target="_blank"
               style={{ marginLeft: '10px' }}
-              data-testid="demo-link"
+              data-testid={`demo-link-${props.index}`}
             >
               <CgWebsite /> &nbsp; Demo
             </Button>
