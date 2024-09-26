@@ -6,6 +6,7 @@ function Particle() {
   return (
     <Particles
       id="tsparticles"
+      data-testid="particle-component"
       params={{
         particles: {
           number: {

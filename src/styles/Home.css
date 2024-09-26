@@ -99,32 +99,32 @@
   }
 }
 
-.home-about-section {
+.introduction {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
 
-.home-about-description {
+.introduction-description {
   color: white !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
 }
 
-.home-about-body {
+.introduction-body {
   padding-top: 50px;
   font-size: 1.2em !important;
   text-align: left;
 }
 
-.home-about-social {
+.introduction-social {
   text-align: center !important;
   padding-top: 25px;
   color: white !important;
 }
 
-.home-about-social-links {
+.introduction-social-links {
   justify-content: center !important;
   padding-top: 15px !important;
   display: inline-block !important;

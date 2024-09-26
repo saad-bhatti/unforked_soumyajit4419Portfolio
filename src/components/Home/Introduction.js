@@ -2,21 +2,25 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Tilt from 'react-parallax-tilt'
 import myImg from '../../assets/avatar.svg'
-import socialIcons from '../socialIcons.js'
+import socialIcons from '../../data/socialIcons.js'
 
 function Introduction() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container
+      fluid
+      className="introduction"
+      data-testid="introduction-component"
+    >
       <Row>
         {/* Text section */}
-        <Col md={8} className="home-about-description">
+        <Col md={8} className="introduction-description">
           {/* Title */}
-          <h1 style={{ fontSize: '2.6em' }}>
+          <h1 style={{ fontSize: '2.6em' }} data-testid="intro-title">
             LET ME <span className="purple" children="INTRODUCE" /> MYSELF
           </h1>
 
           {/* Body */}
-          <p className="home-about-body">
+          <p className="introduction-body" data-testid="intro-body">
             I fell in love with programming and I have at least learnt
             something, I think… 🤷‍♂️
             <br />
@@ -54,18 +58,23 @@ function Introduction() {
         </Col>
 
         {/* Image section */}
-        <Col md={4} className="myAvtar">
+        <Col md={4} className="myAvtar" data-testid="avatar-container">
           <Tilt>
-            <img src={myImg} className="img-fluid" alt="avatar" />
+            <img
+              src={myImg}
+              className="img-fluid"
+              alt="avatar"
+              data-testid="intro-avatar"
+            />
           </Tilt>
         </Col>
       </Row>
 
       {/* Social links */}
       <Row>
-        <Col md="12" className="home-about-social">
+        <Col md="12" className="introduction-social">
           {/* Title */}
-          <h1 children="FIND ME ON" />
+          <h1 children="FIND ME ON" data-testid="find-me-on" />
 
           {/* Caption */}
           <p>
@@ -73,14 +82,15 @@ function Introduction() {
           </p>
 
           {/* Social icons */}
-          <ul className="home-about-social-links">
+          <ul className="introduction-social-links" data-testid="social-links">
             {socialIcons.map((socialIcon, index) => (
               <li className="social-icons" key={index}>
                 <a
                   href={socialIcon.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  data-testid={`social-link-${index}`}
                 >
                   {socialIcon.icon}
                 </a>
@@ -92,4 +102,5 @@ function Introduction() {
     </Container>
   )
 }
+
 export default Introduction

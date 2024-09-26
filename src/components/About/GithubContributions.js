@@ -4,7 +4,10 @@ import GitHubCalendar from 'react-github-calendar'
 
 function GithubContributions() {
   return (
-    <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+    <Row
+      style={{ justifyContent: 'center', paddingBottom: '10px' }}
+      data-testid="githubcontributions-component"
+    >
       {/* Title */}
       <h1 className="project-heading" style={{ paddingBottom: '20px' }}>
         Days I <strong className="purple" children="Code" />

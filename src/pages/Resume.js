@@ -6,6 +6,7 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import pdf from '../assets/Soumyajit-Behera-Resume.pdf'
 import Particle from '../components/Particle.js'
 import '../styles/Resume.css'
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
 
 function Resume() {
@@ -22,6 +23,7 @@ function Resume() {
         href={pdf}
         target="_blank"
         style={{ maxWidth: '250px' }}
+        data-testid="download-button"
       >
         <AiOutlineDownload />
         &nbsp;Download CV
@@ -38,9 +40,13 @@ function Resume() {
         {DownloadButton}
 
         {/* Resume view */}
-        <Row className="resume">
+        <Row className="resume" data-testid="pdf-document">
           <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            <Page
+              pageNumber={1}
+              scale={width > 786 ? 1.7 : 0.6}
+              data-testid="pdf-page-1"
+            />
           </Document>
         </Row>
 

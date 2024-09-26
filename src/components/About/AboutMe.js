@@ -2,13 +2,14 @@ import React from 'react'
 import { Card, Col, Row } from 'react-bootstrap'
 import { ImPointRight } from 'react-icons/im'
 import laptopImg from '../../assets/about.png'
+import sideActivities from '../../data/sideActivities'
 
 function AboutMe() {
-  /* Activities list */
-  const activities = ['Playing Games', 'Writing Tech Blogs', 'Travelling']
-
   return (
-    <Row style={{ justifyContent: 'center', padding: '10px' }}>
+    <Row
+      style={{ justifyContent: 'center', padding: '10px' }}
+      data-testid="aboutme-component"
+    >
       <Col
         md={7}
         style={{
@@ -18,14 +19,17 @@ function AboutMe() {
         }}
       >
         {/* Title */}
-        <h1 style={{ fontSize: '2.1em', paddingBottom: '20px' }}>
+        <h1
+          style={{ fontSize: '2.1em', paddingBottom: '20px' }}
+          data-testid="about-title"
+        >
           Know Who <strong className="purple" children="I AM" />
         </h1>
 
         <Card className="quote-card-view">
           <Card.Body>
             {/* Body */}
-            <blockquote className="blockquote mb-0">
+            <blockquote className="blockquote mb-0" data-testid="about-body">
               <p style={{ textAlign: 'justify' }}>
                 Hi Everyone, I am{' '}
                 <span className="purple">Soumyajit Behera </span>
@@ -41,19 +45,28 @@ function AboutMe() {
               </p>
 
               {/* Activities list */}
-              <ul>
-                {activities.map((activity, i) => (
-                  <li key={i} className="about-activity">
+              <ul data-testid="about-activities">
+                {sideActivities.map((activity, i) => (
+                  <li
+                    key={i}
+                    className="about-activity"
+                    data-testid={`activity-${i}`}
+                  >
                     <ImPointRight /> {activity}
                   </li>
                 ))}
               </ul>
 
               {/* Quote */}
-              <p style={{ color: 'rgb(155 126 172)' }}>
+              <p
+                style={{ color: 'rgb(155 126 172)' }}
+                data-testid="about-quote"
+              >
                 "Strive to build things that make a difference!"{' '}
               </p>
-              <footer className="blockquote-footer">Soumyajit</footer>
+              <footer className="blockquote-footer" data-testid="about-footer">
+                Soumyajit
+              </footer>
             </blockquote>
           </Card.Body>
         </Card>
@@ -64,8 +77,14 @@ function AboutMe() {
         md={5}
         style={{ paddingTop: '120px', paddingBottom: '50px' }}
         className="about-img"
+        data-testid="about-image-container"
       >
-        <img src={laptopImg} alt="about" className="img-fluid" />
+        <img
+          src={laptopImg}
+          alt="about"
+          className="img-fluid"
+          data-testid="about-image"
+        />
       </Col>
     </Row>
   )
