@@ -15,6 +15,7 @@ function renderNavbar() {
     </MemoryRouter>
   )
 }
+
 describe('Navbar Component', () => {
   test('renders the NavBar with logo', () => {
     renderNavbar()

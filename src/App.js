@@ -25,7 +25,7 @@ function App() {
 
   return (
     <BrowserRouter basename="/soumyajit4419Portfolio">
-      <Preloader load={load} />
+      <Preloader load={load} data-testid="preloader" />
       <div className="App" id={load ? 'no-scroll' : 'scroll'}>
         <Navbar />
         <ScrollToTop />
