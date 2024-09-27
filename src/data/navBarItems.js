@@ -1,4 +1,5 @@
 import {
+  AiOutlineContacts,
   AiOutlineFundProjectionScreen,
   AiOutlineHome,
   AiOutlineUser
@@ -37,6 +38,12 @@ const navBarItems = [
     to: 'https://soumyajitblogs.vercel.app/',
     icon: <ImBlog className="navbar-icon" />,
     external: true
+  },
+  {
+    isExternalLink: false,
+    text: 'Contact',
+    to: '/contact',
+    icon: <AiOutlineContacts className="navbar-icon" />
   }
 ]
 
