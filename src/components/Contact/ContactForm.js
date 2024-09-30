@@ -59,12 +59,12 @@ function ContactForm() {
   return (
     <>
       {/* Component Title */}
-      <h1 className="heading">
+      <h1 className="heading" data-testid="contact-form-heading">
         <strong className="purple" children="Contact" /> Form
       </h1>
 
       {/* Contact Form */}
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} data-testid="contact-form">
         {/* Name */}
         <Form.Group className="form-section" controlId="formName">
           <Form.Label className="form-label">Name</Form.Label>
@@ -75,6 +75,7 @@ function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
+            data-testid="form-name-input"
           />
         </Form.Group>
 
@@ -88,11 +89,12 @@ function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
+            data-testid="form-email-input"
           />
         </Form.Group>
 
         {/* Subject */}
-        <Form.Group className="form-section" controlId="formEmail">
+        <Form.Group className="form-section" controlId="formSubject">
           <Form.Label>Subject</Form.Label>
           <Form.Control
             type="text"
@@ -101,6 +103,7 @@ function ContactForm() {
             value={formData.subject}
             onChange={handleChange}
             required
+            data-testid="form-subject-input"
           />
         </Form.Group>
 
@@ -115,6 +118,7 @@ function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             required
+            data-testid="form-message-input"
           />
         </Form.Group>
 
@@ -123,6 +127,7 @@ function ContactForm() {
           variant="primary"
           type="submit"
           style={{ minWidth: '8%' }}
+          data-testid="form-submit-button"
           children="Send"
         />
       </Form>
@@ -136,11 +141,12 @@ function ContactForm() {
           autohide
           bg={toastVariant}
           className={toastVariant === 'success' ? 'toast-custom-success' : ''}
+          data-testid="toast-notification"
         >
           <Toast.Header
             children={<strong className="me-auto" children="Notification" />}
           />
-          <Toast.Body children={toastMessage} />
+          <Toast.Body data-testid="toast-message">{toastMessage}</Toast.Body>
         </Toast>
       </ToastContainer>
     </>
