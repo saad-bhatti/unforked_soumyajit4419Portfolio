@@ -9,6 +9,7 @@ import About from './pages/About.js'
 import Home from './pages/Home.js'
 import Projects from './pages/Projects.js'
 import Resume from './pages/Resume.js'
+import Contact from './pages/Contact.js'
 import './styles/App.css'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
