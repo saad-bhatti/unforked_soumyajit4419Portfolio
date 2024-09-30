@@ -41,6 +41,7 @@ This portfolio template is built using modern web technologies, ensuring scalabi
 - **GitHub Pages**: For hosting and deploying the portfolio.
 - **GitHub Actions**: For automating tasks like testing and deployment.
 - **Jest**: JavaScript testing framework for ensuring code quality.
+- **Code Climate**: For maintaining code quality and test coverage.
 
 ## Features
 
