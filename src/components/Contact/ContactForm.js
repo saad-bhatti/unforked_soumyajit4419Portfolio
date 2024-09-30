@@ -57,7 +57,7 @@ function ContactForm() {
   }
 
   return (
-    <>
+    <div data-testid="contact-form-container">
       {/* Component Title */}
       <h1 className="heading" data-testid="contact-form-heading">
         <strong className="purple" children="Contact" /> Form
@@ -149,7 +149,7 @@ function ContactForm() {
           <Toast.Body data-testid="toast-message">{toastMessage}</Toast.Body>
         </Toast>
       </ToastContainer>
-    </>
+    </div>
   )
 }
 

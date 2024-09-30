@@ -6,7 +6,7 @@ import '../styles/Contact.css'
 
 function Contact() {
   return (
-    <Container fluid className="contact-section">
+    <Container fluid className="contact-section" data-testid="contact-section">
       <Container>
         <ContactForm />
         <AlternativeContact />

@@ -6,9 +6,7 @@ function AlternativeContact() {
   return (
     <Row style={{ margin: '20px 0' }} data-testid="alternative-contact">
       {/* Component Title */}
-      <h1 className="heading" data-testid="alternative-contact-heading">
-        OR
-      </h1>
+      <h1 data-testid="alternative-contact-heading">OR</h1>
       <p data-testid="alternative-contact-description">
         Feel free to <span className="purple">connect </span>with me via:
       </p>
