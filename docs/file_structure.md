@@ -22,6 +22,7 @@ The directories and files in **bold** are the ones you will likely interact with
   - *setup.md*: Instructions for installing and setting up the project.
 
 - *images/*: Holds images used in the project for its markdown files and index.html.
+  - *customization.png*: Diagram for the customization markdown file.
   - *file_structure.png*: Diagram for the file structure markdown file.
   - *readme.png*: A demo image showcasing the portfolio on a laptop and mobile device.
   - *screenshot.png*: Another image used to demonstrate the layout of the portfolio's home page.
