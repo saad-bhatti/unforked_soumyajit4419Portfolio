@@ -73,7 +73,7 @@ describe('Navbar Component', () => {
     const forkLink = screen.getByTestId('fork-link')
     expect(forkLink).toHaveAttribute(
       'href',
-      'https://github.com/soumyajit4419/Portfolio'
+      'https://saad-bhatti.github.io/soumyajit4419Portfolio/'
     )
   })
 })
