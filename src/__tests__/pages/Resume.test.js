@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom/extend-expect';
 import { render, screen } from '@testing-library/react';
-import pdf from '../../assets/Soumyajit-Behera-Resume.pdf';
+import pdf from '../../assets/Resume.pdf';
 import Resume from '../../pages/Resume.js';
 
 /* Mock HTMLCanvasElement for Particle.js */

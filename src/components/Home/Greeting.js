@@ -5,6 +5,9 @@ import homeLogo from '../../assets/home-main.svg'
 import interestedRoles from '../../data/interestedRoles'
 
 function Greeting() {
+  /* Name to be displayed */
+  const name = 'SOUMYAJIT BEHERA'
+
   return (
     <Row data-testid="greeting-component">
       <Col md={7} className="home-header">
@@ -29,7 +32,7 @@ function Greeting() {
           I'M{' '}
           <strong
             className="main-name"
-            children="SOUMYAJIT BEHERA"
+            children={name}
             data-testid="greeting-name"
           />
         </h1>

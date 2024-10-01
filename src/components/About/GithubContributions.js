@@ -3,6 +3,9 @@ import { Row } from 'react-bootstrap'
 import GitHubCalendar from 'react-github-calendar'
 
 function GithubContributions() {
+  /* Github username */
+  const gitHubUsername = 'soumyajit4419'
+
   return (
     <Row
       style={{ justifyContent: 'center', paddingBottom: '10px' }}
@@ -15,7 +18,7 @@ function GithubContributions() {
 
       {/* Github Calendar */}
       <GitHubCalendar
-        username="soumyajit4419"
+        username={gitHubUsername}
         blockSize={15}
         blockMargin={5}
         color="#c084f5"
