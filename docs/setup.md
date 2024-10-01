@@ -1,5 +1,12 @@
 # Installation and Setup
 
+This document provides instructions for installing and setting up the project on your local machine. Follow the steps below to get started.
+
+<!-- Setup Image -->
+<div align="center">
+  <img alt="setup" src="../images/setup.png" />
+</div>
+
 ## Prerequisites
 
 Before you begin, make sure you have the following installed on your machine:

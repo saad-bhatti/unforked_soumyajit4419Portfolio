@@ -3,7 +3,7 @@ import { Button, Container, Row } from 'react-bootstrap'
 import { AiOutlineDownload } from 'react-icons/ai'
 import { Document, Page, pdfjs } from 'react-pdf'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
-import pdf from '../assets/Soumyajit-Behera-Resume.pdf'
+import pdf from '../assets/Resume.pdf'
 import Particle from '../components/Particle.js'
 import '../styles/Resume.css'
 

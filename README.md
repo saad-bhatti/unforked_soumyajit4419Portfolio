@@ -4,7 +4,7 @@
 
 <!-- Demo Image -->
 <div align="center">
-  <img alt="Demo" src="./images/device-display.png" />
+  <img alt="Demo" src="./images/readme.png" />
 </div>
 
 <!-- Badges -->
