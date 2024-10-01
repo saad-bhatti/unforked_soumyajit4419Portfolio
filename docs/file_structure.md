@@ -54,7 +54,7 @@ The directories and files in **bold** are the ones you will likely interact with
 
 ## Source Directory (src/)
 
-- **tests*/*: Contains unit tests for testing components of the application.
+- *tests/*: Contains unit tests for testing components of the application.
   
 - **assets/**: Contains static assets such as images, project logos, and the resume used throughout the portfolio.
   
